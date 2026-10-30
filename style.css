@@ -46,7 +46,7 @@ h3 { font-size:25px; color:var(--navy); }
 .service-card .num { color:var(--gold); font:italic 24px Georgia,serif; margin-bottom:24px; }
 .service-card p { color:var(--muted); font-size:14px; margin-bottom:0; }
 .split { display:grid; grid-template-columns:1fr 1fr; gap:clamp(35px,7vw,100px); align-items:center; }
-.photo-panel { min-height:430px; background:linear-gradient(0deg,rgba(6,23,47,.15),rgba(6,23,47,.15)),url("https://images.unsplash.com/photo-1566847438217-76e82d383f84?auto=format&fit=crop&w=1200&q=85") center/cover; }
+.photo-panel { min-height:430px; background:linear-gradient(0deg,rgba(6,23,47,.15),rgba(6,23,47,.15)),url("https://images.unsplash.com/photo-1578575437130-527020e9b3a8?auto=format&fit=crop&w=2200&q=85") center/cover; }
 .copy p { color:var(--muted); margin:20px 0 0; }
 .statline { display:flex; gap:30px; margin-top:30px; border-top:1px solid #dfe5ea; padding-top:20px; }
 .statline strong { display:block; color:var(--navy); font:24px Georgia,serif; }
@@ -54,7 +54,7 @@ h3 { font-size:25px; color:var(--navy); }
 .cta { display:flex; justify-content:space-between; align-items:center; gap:32px; background:var(--navy-2); color:#fff; padding:clamp(30px,5vw,64px); }
 .cta h2 { color:#fff; font-size:clamp(30px,3.5vw,44px); }
 .cta p { color:rgba(255,255,255,.7); max-width:600px; margin:14px 0 0; }
-.page-hero { min-height:480px; padding:160px clamp(24px,9vw,140px) 80px; display:flex; align-items:end; color:#fff; background:linear-gradient(90deg,rgba(3,15,31,.88),rgba(3,15,31,.3)),url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=85") center/cover; }
+.page-hero { min-height:480px; padding:160px clamp(24px,9vw,140px) 80px; display:flex; align-items:end; color:#fff; background:linear-gradient(90deg,rgba(3,15,31,.88),rgba(3,15,31,.3)),url("https://images.unsplash.com/photo-1578575437130-527020e9b3a8?auto=format&fit=crop&w=2200&q=85") center/cover; }
 .page-hero h1 { font-size:clamp(42px,5.5vw,72px); }
 .page-hero p { max-width:650px; color:rgba(255,255,255,.78); font-size:16px; margin:20px 0 0; }
 .service-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.14); }
