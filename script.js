@@ -15,23 +15,6 @@
     window.addEventListener('resize', () => { if (window.innerWidth > 850) close(); });
   }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = String(new Date().getFullYear()); });
-  const form = document.getElementById('enquiry-form');
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-      const data = new FormData(form);
-      const val = k => String(data.get(k) || '').trim();
-      const subject = `Nano Shipbroking - ${val('type')}`;
-      const body = [
-        `Enquiry type: ${val('type')}`, `Name: ${val('name')}`, `Company: ${val('company') || 'Not specified'}`,
-        `Email: ${val('email')}`, `Phone / WhatsApp: ${val('phone') || 'Not specified'}`,
-        '', 'Enquiry details:', val('details'), '', 'Sent via the Nano Shipbroking website email template.'
-      ].join('\n');
-      const mailto = `mailto:alinano@nanoshipbroking.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      const status = document.getElementById('form-status');
-      if (status) status.textContent = 'Your email application should open with the prepared enquiry. Please press Send there to complete it.';
-      window.location.href = mailto;
-    });
-  }
+  // The contact form posts directly to FormSubmit from its HTML action.
+  // Do not intercept submit: blocking it prevents delivery.
 })();
