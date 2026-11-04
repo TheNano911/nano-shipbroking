@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 510" fill="none">
+<defs><pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" stroke="#fff" stroke-opacity=".07"/></pattern></defs>
+<rect width="800" height="510" fill="url(#grid)"/>
+<g stroke="#b7c6ce" stroke-opacity=".2" stroke-width="1.1"><path d="M30 214C120 121 213 156 255 184c50 35 58 90 104 86 48-3 79-78 143-60 58 17 94 69 160 61l95-60"/><path d="M19 340c75-75 148-65 221-40s120 85 195 48c60-30 95-26 155 0s118 19 190-11"/><path d="M30 110c66 12 126-42 202-22 61 16 97 42 157 24 79-24 120 9 180 26 73 20 128-34 201-10"/></g>
+<g stroke="#d9bc7b" stroke-width="2.5"><path d="M110 320C225 118 352 108 495 252s145 80 192-50" stroke-dasharray="7 12"/><path d="M110 320C227 388 410 407 687 202" stroke-opacity=".6"/></g>
+<g fill="#e0c281" stroke="#112b40" stroke-width="5"><circle cx="110" cy="320" r="8"/><circle cx="495" cy="252" r="8"/><circle cx="687" cy="202" r="8"/></g>
+<g fill="#d2e0e4" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.8"><text x="78" y="355">CARGO</text><text x="457" y="229">VESSELS</text><text x="658" y="183">FUELS</text></g>
+</svg>
