@@ -15,6 +15,25 @@
     window.addEventListener('resize', () => { if (window.innerWidth > 850) close(); });
   }
   document.querySelectorAll('[data-year]').forEach(el => { el.textContent = String(new Date().getFullYear()); });
+  const whatsappButton = document.getElementById('send-whatsapp-enquiry');
+  const enquiryForm = document.getElementById('enquiry-form');
+  if (whatsappButton && enquiryForm) {
+    whatsappButton.addEventListener('click', () => {
+      if (!enquiryForm.reportValidity()) return;
+      const fields = new FormData(enquiryForm);
+      const value = (name) => String(fields.get(name) || '').trim();
+      const message = [
+        'Nano Shipbroking website enquiry',
+        'Type: ' + value('type'),
+        'Name: ' + value('name'),
+        'Email: ' + value('email'),
+        'Company: ' + (value('company') || 'Not specified'),
+        'Phone: ' + (value('phone') || 'Not specified'),
+        'Details: ' + value('details')
+      ].join('\n');
+      window.location.href = 'https://wa.me/905524574088?text=' + encodeURIComponent(message);
+    });
+  }
   // The contact form posts directly to FormSubmit from its HTML action.
   // Do not intercept submit: blocking it prevents delivery.
 })();
