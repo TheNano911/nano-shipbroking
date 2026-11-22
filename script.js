@@ -36,7 +36,10 @@
   type.addEventListener('change', () => {
     guidance.textContent = guidanceByType[type.value] || defaultGuidance;
   });
-  form.addEventListener('input', () => {
+  form.addEventListener('input', ({ target }) => {
+    if (['name', 'details'].includes(target.name) && target.value.trim()) {
+      target.setCustomValidity('');
+    }
     status.textContent = '';
     copyText.hidden = true;
   });
